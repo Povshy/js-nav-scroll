@@ -40,12 +40,12 @@
 
 <body>
 
-	{{!-- Підключаємо файл скриптів container --}}
-	<script src="dist/js/container/{{name}}/index.js"></script>
-
 	{{! ↓ ця кострукція показує куди шаблонізатору треба вставляти код з container файлу }}
 	{{{body}}}
 
 </body>
+
+{{!-- Підключаємо файл скриптів container --}}
+<script src="dist/js/container/{{name}}/index.js"></script>
 
 </html>
